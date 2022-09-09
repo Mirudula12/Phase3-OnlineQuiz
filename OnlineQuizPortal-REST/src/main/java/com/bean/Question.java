@@ -16,7 +16,7 @@ public class Question  {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int qid;
-	private String qustion;
+	private String quest;
 	private String opt1;
 	private String opt2;
 	private String opt3;
@@ -31,11 +31,11 @@ public class Question  {
 	}
 
 	public String getQuest() {
-		return qustion;
+		return quest;
 	}
 
-	public void setQuest(String qustion) {
-		this.qustion = qustion;
+	public void setQuest(String quest) {
+		this.quest = quest;
 	}
 
 	public String getOpt1() {
@@ -72,7 +72,7 @@ public class Question  {
 
 	@Override
 	public String toString() {
-		return "Question [qid=" + qid + ", quest=" + qustion + ", opt1=" + opt1 + ", opt2=" + opt2 + ", opt3=" + opt3
+		return "Question [qid=" + qid + ", quest=" + quest + ", opt1=" + opt1 + ", opt2=" + opt2 + ", opt3=" + opt3
 				+  ", ans=" + ans + "]";
 	}
 
